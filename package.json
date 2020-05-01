@@ -8,7 +8,9 @@
     "node": "6.*"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -19,8 +21,10 @@
     "cfenv": "^1.0.x",
     "cloudant": "1.9.x",
     "dotenv": "^4.0.0",
-    "express": "^4.15.x"
+    "express": "^4.15.x",
+    "snyk": "^1.316.1"
   },
   "author": "IBM Corp",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "snyk": true
 }
